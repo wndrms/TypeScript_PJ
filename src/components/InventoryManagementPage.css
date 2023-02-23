@@ -1,0 +1,17 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+background-color: #0077ff;
+color: #fff;
+padding: 1rem;
+margin: 0;
+text-align: center;
+}
+
+.status-list {
+display: flex;
+flex-wrap: wrap;
+}

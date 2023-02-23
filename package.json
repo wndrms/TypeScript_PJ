@@ -14,6 +14,7 @@
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "firebase": "^9.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
@@ -23,9 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server/server.js",
-    "client": "react-scripts start",
+    "start": "react-scripts start",
+    "__start__": "concurrently \"npm run server\" \"npm run client\"",
+    "__server__": "node server/server.js",
+    "__client__": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -53,6 +55,5 @@
     "@types/styled-components": "^5.1.26",
     "babel-plugin-styled-components": "^2.0.7",
     "gh-pages": "^5.0.0"
-  },
-  "proxy": "http://localhost:3005"
+  }
 }

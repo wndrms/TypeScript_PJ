@@ -1,11 +1,10 @@
+import InventoryManagementPage from 'components/InventoryManagementPage';
 import React from 'react';
-import Button from "./components/button";
-import TextToJson from "./components/TextToJson";
 
 function App() {
   return (
     <div>
-      <TextToJson></TextToJson>
+      <InventoryManagementPage/>
     </div>
   );
 }
